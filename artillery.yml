@@ -1,0 +1,10 @@
+config:
+  target: https://www.saucedemo.com/
+  engines:
+    playwright: 
+      launchOptions: 
+        headless: false
+  processor: "./tests/artillery/loginPage.js"
+scenarios:
+    - engine: playwright
+      testFunction: artilleryTest
